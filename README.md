@@ -51,4 +51,10 @@ extract the relevant documents.
 The dequeue implementation is based on extracting the max occurences number, I extract the
 biggest occurences number from binomial heap.
 
-
+### Why did I use binomial heap?  
+The main advantage of using priority queue is to save time. For example, If I were using
+array instead of priority queue, It would take O(n) time in the worst case. Priority queue takes
+time O(logn), then we can say that priority queue is much more faster than array. In the other
+hand, If I would use binary heap, It differs in the union time. Binomial heap takes time
+O(logn) and binary heap takes O(n) times when we want to do union. So we can see that
+Binomial heap is faster than binary heap in the union operation.
