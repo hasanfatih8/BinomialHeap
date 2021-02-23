@@ -37,3 +37,18 @@ keyword (i.e., text) and three documents.
 ***The most relevant document with the given keyword is the one having the highest
 similarity score. Consequently, the ranking of the documents according to the
 relevance to the keyword is Doc2, Doc1, Doc3.***
+
+### How does this code works?  
+This code is constructed based on binomial heap principles. (What is binomial heap? https://algorithmtutor.com/Data-Structures/Tree/Binomial-Heaps/) I’ve created a max binomial heap which stores the occurences of a word inside of relevant
+documents. Then I’ve extracted the relevant 5 documents with the keyword which is taken
+from user as input.  
+The enqueue system of my priority queue utilizes a combination of a binomial heap union
+and the creation of a new node in the binomial heap. Because every element enqueued into the
+priority queue in our case is a single node, we can create a new node with the word count
+occurence as the value and union this new node with the already existing binomial heap. By
+continuously doing so for each file, we will be able to create a the necessary binomial heap to
+extract the relevant documents.  
+The dequeue implementation is based on extracting the max occurences number, I extract the
+biggest occurences number from binomial heap.
+
+
