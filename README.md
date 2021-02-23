@@ -35,4 +35,4 @@ keyword (i.e., text) and three documents.
 0 times in Doc3.  
 ***The most relevant document with the given keyword is the one having the highest
 similarity score. Consequently, the ranking of the documents according to the
-relevance to the keyword is Doc2, Doc1, Doc3.
+relevance to the keyword is Doc2, Doc1, Doc3.***
