@@ -41,7 +41,7 @@ relevance to the keyword is Doc2, Doc1, Doc3.***
 ### How does this code works?  
 This code is constructed based on binomial heap principles. (What is binomial heap? https://algorithmtutor.com/Data-Structures/Tree/Binomial-Heaps/) I’ve created a max binomial heap which stores the occurences of a word inside of relevant
 documents. Then I’ve extracted the relevant 5 documents with the keyword which is taken
-from user as input.  
+from user as input.  ***Basically, It takes an input from user as a word meanwhile it goes to the directory by DIR, reads the whole .txt files one by one and keep record of occurences of the word which is taken as input from user. At the same time it allocates memories for nodes in the binomial heap.***   
 The enqueue system of my priority queue utilizes a combination of a binomial heap union
 and the creation of a new node in the binomial heap. Because every element enqueued into the
 priority queue in our case is a single node, we can create a new node with the word count
